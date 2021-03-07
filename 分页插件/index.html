@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+    #container a{
+        min-width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #000;
+        border:  1px solid #ccc;
+        margin: 0 2px;
+        padding: 0 5px;
+        display: inline-block;
+    }
+    #container a.active{
+        background: blue;
+        opacity: .5;
+        color: #fff;
+    }
+
+</style>
+<body>
+    <div id="container"></div>
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.page.js"></script>
+    <script>
+        $(function(){
+            $('#container').page()
+        })
+
+    </script>
+    
+</body>
+</html>
